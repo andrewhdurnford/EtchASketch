@@ -1,0 +1,51 @@
+html {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+}
+
+.row:first-of-type {
+  border-top: 1px solid black;
+}
+
+.row:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.square {
+  background-color: white;
+  width: calc(800px / var(--gridsize));
+  height: calc(800px / var(--gridsize));
+  color: white;
+}
+
+.header {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: space-between;
+}
+.header button {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  outline: 1px solid black;
+  margin-bottom: 10px;
+}
